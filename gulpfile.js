@@ -5,11 +5,11 @@ const gulp = require('gulp')
 const util = require('gulp-template-util')
 const gcPub = require('gulp-gcloud-publish')
 
-const bucketNameForTest = 'tutor-events-test'
-const bucketNameForProd = 'tutor-events'
+const bucketNameForTest = 'tutor-apps-test'
+const bucketNameForProd = 'tutor-apps'
 const projectId = 'tutor-204108'
 const keyFileName = 'tutor.json'
-const projectName = 'event/make-qrcode/'
+const projectName = 'app/make-qrcode/'
 
 let libTask = dest => {
   return function () {

@@ -1,6 +1,6 @@
 (function () {
   let url = window.location.search
-  let ehanlinHost = `https://www.tbbt.com.tw/event/collection/?`
+  let ehanlinHost = `https://www.ehanlin.com.tw/event/collection/?`
   let year = url.split('&')[0].split('=')[1]
   let type = url.split('&')[1].split('=')[1]
   let htmlType = decodeURI(type)

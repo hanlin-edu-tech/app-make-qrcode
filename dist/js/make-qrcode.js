@@ -22,8 +22,8 @@
     )
     dataCode = {
       text: `${ehanlinHost}year=${year}&type=${type}&subject=${subject}#1_${index}`,
-      width: 128,
-      height: 128,
+      width: 256,
+      height: 256,
       colorDark: '#000000',
       colorLight: '#ffffff',
       correctLevel: QRCode.CorrectLevel.H
@@ -39,11 +39,11 @@
     canvas.height = img.height
     canvas.getContext('2d').drawImage(img, 0, 0)
 
-    let url = canvas.toDataURL('image/jpg')
+    let url = canvas.toDataURL('image/jpeg')
     let downloadLink = document.getElementById('downloadLink')
 
     downloadLink.setAttribute('href', url)
-    downloadLink.setAttribute('download', `${qrcodeName}.jpg`)
+    downloadLink.setAttribute('download', `${qrcodeName}.jpeg`)
     downloadLink.click()
   }
 

@@ -64,7 +64,7 @@ let uploadGCS = bucketName => {
       projectId: projectId,
       public: true,
       metadata: {
-        cacheControl: 'private, no-transform'
+        cacheControl: 'no-store'
       }
     }))
 }
